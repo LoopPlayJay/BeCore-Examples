@@ -1,0 +1,100 @@
+{
+  "examples": [
+    {
+      "name": "GoldPlusCommand",
+      "description": "골드 증가 명령 예제 (풀링 시스템 적용)",
+      "category": "basic",
+      "difficulty": "beginner",
+      "files": [
+        "GoldPlusCommand.h",
+        "GoldPlusCommand.cpp",
+        "GoldPlusCommandTest.h",
+        "GoldPlusCommandTest.cpp"
+      ],
+      "tags": ["gold", "command", "basic", "pooling", "smallstring"],
+      "dependencies": ["BeTx"],
+      "usage": "골드 시스템을 위한 기본 명령 패턴 구현, 풀링 시스템과 SmallString 최적화 적용",
+      "version": "1.1.0"
+    },
+    {
+      "name": "GoldPlusCommandWrapper",
+      "description": "UTxCommandWrapper 기반 골드 명령 예제 (새로운 아키텍쳐)",
+      "category": "basic",
+      "difficulty": "beginner",
+      "files": [
+        "GoldPlusCommandWrapper.h",
+        "GoldPlusCommandWrapper.cpp",
+        "GoldPlusCommandWrapperTest.h",
+        "GoldPlusCommandWrapperTest.cpp"
+      ],
+      "tags": ["gold", "command", "wrapper", "blueprint", "new_architecture"],
+      "dependencies": ["BeTx"],
+      "usage": "UTxCommandWrapper 기반의 Blueprint 친화적 골드 명령 구현, 새로운 아키텍쳐 적용",
+      "version": "1.2.0"
+    },
+    {
+      "name": "MultiplayerCommand",
+      "description": "멀티플레이어 명령 예제",
+      "category": "multiplayer",
+      "difficulty": "intermediate",
+      "files": [
+        "MultiplayerCommand.h",
+        "MultiplayerCommand.cpp"
+      ],
+      "tags": ["multiplayer", "network", "authority"],
+      "dependencies": ["BeTx", "Networking"],
+      "usage": "서버/클라이언트 권한 기반 멀티플레이어 명령 구현",
+      "version": "1.0.0"
+    },
+    {
+      "name": "TaggedCommand",
+      "description": "태그 기반 명령 예제",
+      "category": "advanced",
+      "difficulty": "advanced",
+      "files": [
+        "TaggedCommand.h",
+        "TaggedCommand.cpp"
+      ],
+      "tags": ["tags", "filtering", "categorization"],
+      "dependencies": ["BeTx"],
+      "usage": "FName 기반 태그 시스템을 활용한 명령 분류 및 필터링",
+      "version": "1.0.0"
+    }
+  ],
+  "categories": {
+    "basic": {
+      "name": "기본 예제",
+      "description": "BeTx의 기본 기능을 보여주는 예제들",
+      "order": 1
+    },
+    "multiplayer": {
+      "name": "멀티플레이어",
+      "description": "네트워크 환경에서의 BeTx 사용 예제들",
+      "order": 2
+    },
+    "advanced": {
+      "name": "고급 예제",
+      "description": "고급 기능과 패턴을 보여주는 예제들",
+      "order": 3
+    }
+  },
+  "metadata": {
+    "version": "1.2.0",
+    "lastUpdated": "2025-01-01",
+    "totalExamples": 4,
+    "categories": 3,
+    "description": "BeTx 플러그인 사용 예제 모음 - UTxCommandWrapper 기반 새로운 아키텍쳐 포함",
+    "newFeatures": [
+      "Command Pooling System",
+      "SmallString Optimization", 
+      "Fixed-size Ring Buffers",
+      "Performance Monitoring",
+      "Memory Allocation Reduction",
+      "UTxCommandWrapper Architecture",
+      "Blueprint-friendly Commands",
+      "Enhanced Facade Integration"
+    ]
+  }
+}
+
+
